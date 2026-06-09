@@ -27,16 +27,16 @@ body{
     padding:80px;
 }
 
-/* Home */
+/* Home Icon */
 
 .home-link{
     position:fixed;
-    top:32px;
-    right:36px;
-    width:34px;
-    height:34px;
-    opacity:0.45;
-    transition:opacity .3s ease;
+    top:30px;
+    right:35px;
+    width:32px;
+    height:32px;
+    opacity:0.5;
+    transition:opacity 0.3s ease;
 }
 
 .home-link:hover{
@@ -46,12 +46,10 @@ body{
 .home-link svg{
     width:100%;
     height:100%;
-    fill:none;
-    stroke:#111;
-    stroke-width:1.5;
+    fill:#111;
 }
 
-/* Intro */
+/* Profile Text */
 
 .profile-text{
     max-width:560px;
@@ -64,8 +62,8 @@ body{
 /* Sections */
 
 .section{
-    margin-bottom:100px;
     max-width:850px;
+    margin-bottom:100px;
 }
 
 .section-title{
@@ -77,7 +75,7 @@ body{
 }
 
 .entry{
-    margin-bottom:38px;
+    margin-bottom:40px;
 }
 
 .entry-title{
@@ -98,30 +96,6 @@ body{
     font-weight:300;
 }
 
-/* Filmography */
-
-.project{
-    margin-bottom:45px;
-}
-
-.project-title{
-    font-size:1rem;
-    font-weight:400;
-    margin-bottom:4px;
-}
-
-.project-role{
-    color:#666;
-    font-size:0.9rem;
-    margin-bottom:10px;
-}
-
-.project-text{
-    font-size:0.92rem;
-    line-height:1.8;
-    font-weight:300;
-}
-
 @media(max-width:768px){
 
     .page{
@@ -131,6 +105,7 @@ body{
     .profile-text{
         max-width:100%;
     }
+
 }
 
 </style>
@@ -141,15 +116,7 @@ body{
 <a href="index.html" class="home-link" aria-label="Home">
 
 <svg viewBox="0 0 24 24">
-
-    <!-- Left Arrow -->
-    <path d="M10 6 L4 12 L10 18"/>
-    <path d="M4 12 H14"/>
-
-    <!-- House -->
-    <path d="M15 10 L20 6 L25 10"/>
-    <path d="M17 10 V18 H23 V10"/>
-
+    <path d="M12 3L3 10V21H9V14H15V21H21V10L12 3Z"/>
 </svg>
 
 </a>
@@ -177,7 +144,9 @@ I have experience in many different capacities of non-fiction production, mostly
 <div class="entry">
 <div class="entry-title">Delhi College of Arts and Commerce (Bachelor of Arts: History)</div>
 <div class="entry-date">2015–2018</div>
-<div class="entry-text">Part of the Music Society, Dastgah.</div>
+<div class="entry-text">
+Part of the Music Society, Dastgah.
+</div>
 </div>
 
 <div class="entry">
