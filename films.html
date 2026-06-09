@@ -22,7 +22,13 @@ body{
     color:#111;
 }
 
-/* HOME */
+.page{
+    max-width:1100px;
+    margin:0 auto;
+    padding:80px;
+}
+
+/* Home */
 
 .home-link{
     position:fixed;
@@ -32,7 +38,6 @@ body{
     height:34px;
     opacity:0.55;
     transition:opacity 0.3s ease;
-    z-index:100;
 }
 
 .home-link:hover{
@@ -45,14 +50,7 @@ body{
     fill:#111;
 }
 
-/* PAGE */
-
-.page{
-    width:100%;
-    max-width:1600px;
-    margin:0 auto;
-    padding:80px;
-}
+/* Heading */
 
 .section-title{
     font-size:0.8rem;
@@ -62,83 +60,62 @@ body{
     margin-bottom:80px;
 }
 
-/* FILM ENTRY */
+/* Films */
 
 .film{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:80px;
     margin-bottom:120px;
 }
 
-.film-info{
-    width:42%;
-}
-
-.film-video{
-    width:58%;
-}
-
 .film-title{
-    font-size:1.15rem;
+    font-size:1.2rem;
     font-weight:400;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .film-role{
     font-size:0.9rem;
     color:#666;
-    margin-bottom:18px;
+    margin-bottom:16px;
 }
 
 .film-text{
-    font-size:0.92rem;
-    line-height:1.9;
+    font-size:0.95rem;
     font-weight:300;
+    line-height:1.8;
+    margin-bottom:30px;
+    max-width:750px;
 }
 
-/* VIDEO */
-
-.film-video iframe{
+.video-wrapper{
     width:100%;
-    height:390px;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    height:560px;
     border:none;
 }
 
-/* LINKS */
-
 .project-link{
+    display:inline-block;
+    margin-top:12px;
     color:#111;
     text-decoration:none;
     border-bottom:1px solid rgba(0,0,0,0.15);
-    padding-bottom:2px;
 }
 
 .project-link:hover{
     border-bottom-color:#111;
 }
 
-/* MOBILE */
-
-@media(max-width:1000px){
+@media(max-width:900px){
 
     .page{
         padding:40px 25px;
     }
 
-    .film{
-        flex-direction:column;
-        gap:35px;
-    }
-
-    .film-info,
-    .film-video{
-        width:100%;
-    }
-
-    .film-video iframe{
-        height:300px;
+    .video-wrapper iframe{
+        height:320px;
     }
 
 }
@@ -164,38 +141,43 @@ Experience, Awards and Selections
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">Teesri Khwaish</div>
-        <div class="film-role">Location Project Student Film</div>
+    <div class="film-title">
+        Teesri Khwaish
+    </div>
 
-        <div class="film-text">
-            Selected for Dharamshala International Film Festival 2019.<br>
-            Best Director at 8th Kolkata Shorts International Film Festival 2019.<br>
-            Selected for Signs Film Festival 2019.
-        </div>
+    <div class="film-role">
+        Location Project Student Film
+    </div>
+
+    <div class="film-text">
+        Selected for Dharamshala International Film Festival 2019<br>
+        Best Director at 8th Kolkata Shorts International Film Festival 2019<br>
+        Selected for Signs Film Festival 2019
     </div>
 
 </div>
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">Anima</div>
-        <div class="film-role">Direction and Production</div>
-
-        <div class="film-text">
-            Screened as part of the Vuedemic Online Short Film Festival 2021.<br><br>
-
-            Screened for the online and physical edition of Tactus, the 2021 Athens Digital Arts Festival.<br><br>
-
-            Selected as part of the Labocine catalog and part of the March "Brain is the Screen" issue.
-        </div>
+    <div class="film-title">
+        Anima
     </div>
 
-    <div class="film-video">
+    <div class="film-role">
+        Direction and Production
+    </div>
+
+    <div class="film-text">
+        Screened as part of the Vuedemic Online Short Film Festival 2021.<br>
+        Screened for the online and physical edition of Tactus, the 2021 Athens Digital Arts Festival.<br>
+        Selected as part of the Labocine catalog and part of the March "Brain is the Screen" issue.
+    </div>
+
+    <div class="video-wrapper">
         <iframe
-        src="https://player.vimeo.com/video/516626274"
-        allowfullscreen>
+            src="https://player.vimeo.com/video/516626274"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
         </iframe>
     </div>
 
@@ -203,23 +185,24 @@ Experience, Awards and Selections
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">Bahar Kyon Bhatke?</div>
-        <div class="film-role">Research, Scripting and Sound</div>
-
-        <div class="film-text">
-            Official Selection in Competition, IDSFFK.<br><br>
-
-            Selected at the 11th Chennai International Documentary Film Festival 2023.<br><br>
-
-            Selected at Signs Film Festival 2023.
-        </div>
+    <div class="film-title">
+        Bahar Kyon Bhatke?
     </div>
 
-    <div class="film-video">
+    <div class="film-role">
+        Research, Scripting and Sound
+    </div>
+
+    <div class="film-text">
+        Official Selection in the Competition: Short Documentary section, 14th International Documentary and Shorts Film Festival of India (IDSFFK).<br>
+        Selected at the 11th Chennai International Documentary Film Festival, 2023.<br>
+        Selected at Signs Film Festival 2023.
+    </div>
+
+    <div class="video-wrapper">
         <iframe
-        src="https://www.youtube.com/embed/0ehDr8qnHyE"
-        allowfullscreen>
+            src="https://www.youtube.com/embed/0ehDr8qnHyE"
+            allowfullscreen>
         </iframe>
     </div>
 
@@ -227,19 +210,22 @@ Experience, Awards and Selections
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">Saurangi</div>
-        <div class="film-role">Associate Director, Research and Scripting</div>
-
-        <div class="film-text">
-            Selected at Signs Film Festival 2023.
-        </div>
+    <div class="film-title">
+        Saurangi
     </div>
 
-    <div class="film-video">
+    <div class="film-role">
+        Associate Director, Research and Scripting
+    </div>
+
+    <div class="film-text">
+        Selected at Signs Film Festival 2023.
+    </div>
+
+    <div class="video-wrapper">
         <iframe
-        src="https://www.youtube.com/embed/xujBKPzC3T0"
-        allowfullscreen>
+            src="https://www.youtube.com/embed/xujBKPzC3T0"
+            allowfullscreen>
         </iframe>
     </div>
 
@@ -247,15 +233,19 @@ Experience, Awards and Selections
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">First Son of the Bastard Race</div>
-        <div class="film-role">Direction and Animation</div>
+    <div class="film-title">
+        First Son of the Bastard Race
     </div>
 
-    <div class="film-video">
+    <div class="film-role">
+        Direction and Animation
+    </div>
+
+    <div class="video-wrapper">
         <iframe
-        src="https://player.vimeo.com/video/652168016"
-        allowfullscreen>
+            src="https://player.vimeo.com/video/652168016"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
         </iframe>
     </div>
 
@@ -263,19 +253,22 @@ Experience, Awards and Selections
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">The Making of the Paradise of Food</div>
-        <div class="film-role">Editor</div>
-
-        <div class="film-text">
-            JCB Prize for Literature Short Film.
-        </div>
+    <div class="film-title">
+        The Making of the Paradise of Food
     </div>
 
-    <div class="film-video">
+    <div class="film-role">
+        Editor
+    </div>
+
+    <div class="film-text">
+        JCB Prize for Literature Short Film.
+    </div>
+
+    <div class="video-wrapper">
         <iframe
-        src="https://www.youtube.com/embed/qOn8SwAiweA"
-        allowfullscreen>
+            src="https://www.youtube.com/embed/qOn8SwAiweA"
+            allowfullscreen>
         </iframe>
     </div>
 
@@ -283,47 +276,53 @@ Experience, Awards and Selections
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">UNESCO 2023 State of the Education Report</div>
-        <div class="film-role">
-            Video Production, Scripting, Sound and Editing
-        </div>
+    <div class="film-title">
+        UNESCO 2023 State of the Education Report
+    </div>
+
+    <div class="film-role">
+        Video Production, Scripting, Sound and Editing
     </div>
 
 </div>
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">A Day Out with the Bandsmen</div>
-        <div class="film-role">Editor</div>
-
-        <div class="film-text">
-            <a class="project-link"
-            href="https://norient.com/abhishek-mathur/day-out-bandsmen?special=347"
-            target="_blank">
-            View Project →
-            </a>
-        </div>
+    <div class="film-title">
+        A Day Out with the Bandsmen
     </div>
+
+    <div class="film-role">
+        Editor
+    </div>
+
+    <a
+        class="project-link"
+        href="https://norient.com/abhishek-mathur/day-out-bandsmen?special=347"
+        target="_blank">
+        View Project →
+    </a>
 
 </div>
 
 <div class="film">
 
-    <div class="film-info">
-        <div class="film-title">The Making of I Named My Sister Silence</div>
-        <div class="film-role">Editor</div>
-
-        <div class="film-text">
-            JCB Prize for Literature Short Film.
-        </div>
+    <div class="film-title">
+        The Making of I Named My Sister Silence
     </div>
 
-    <div class="film-video">
+    <div class="film-role">
+        Editor
+    </div>
+
+    <div class="film-text">
+        JCB Prize for Literature Short Film.
+    </div>
+
+    <div class="video-wrapper">
         <iframe
-        src="https://www.youtube.com/embed/LrPamfrP1PM"
-        allowfullscreen>
+            src="https://www.youtube.com/embed/LrPamfrP1PM"
+            allowfullscreen>
         </iframe>
     </div>
 
