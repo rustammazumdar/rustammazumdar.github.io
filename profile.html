@@ -22,20 +22,15 @@ body{
     color:#111;
 }
 
-.page{
-    max-width:1200px;
-    padding:80px;
-}
-
 /* Home Icon */
 
 .home-link{
     position:fixed;
-    top:30px;
-    right:35px;
-    width:32px;
-    height:32px;
-    opacity:0.5;
+    top:32px;
+    right:36px;
+    width:34px;
+    height:34px;
+    opacity:0.55;
     transition:opacity 0.3s ease;
 }
 
@@ -49,21 +44,55 @@ body{
     fill:#111;
 }
 
-/* Profile Text */
+/* Main Layout */
+
+.page{
+    max-width:1300px;
+    margin:0 auto;
+    padding:80px;
+}
+
+/* Intro Section */
+
+.intro{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:80px;
+    margin-bottom:120px;
+}
 
 .profile-text{
     max-width:560px;
     font-size:0.95rem;
     line-height:1.9;
     font-weight:300;
-    margin-bottom:120px;
 }
 
-/* Sections */
+/* Portrait */
+
+.portrait-container{
+    flex-shrink:0;
+}
+
+.portrait{
+    width:380px;
+    max-width:100%;
+    display:block;
+    border:1px solid rgba(0,0,0,0.12);
+    padding:10px;
+    background:#efefef;
+}
+
+.portrait img{
+    width:100%;
+    display:block;
+}
+
+/* Education */
 
 .section{
     max-width:850px;
-    margin-bottom:100px;
 }
 
 .section-title{
@@ -92,20 +121,31 @@ body{
 
 .entry-text{
     font-size:0.92rem;
-    line-height:1.8;
     font-weight:300;
+    line-height:1.8;
 }
 
-@media(max-width:768px){
+/* Mobile */
+
+@media (max-width: 950px){
 
     .page{
         padding:40px 30px;
     }
 
+    .intro{
+        flex-direction:column;
+        gap:50px;
+    }
+
+    .portrait{
+        width:100%;
+        max-width:400px;
+    }
+
     .profile-text{
         max-width:100%;
     }
-
 }
 
 </style>
@@ -123,43 +163,73 @@ body{
 
 <div class="page">
 
-<div class="profile-text">
+    <div class="intro">
 
-Trained in Creative Documentary filmmaking, I consider my practice as experimental non-fiction. My work lies at the intersection of social-political realities and the human psyche, attempting to bridge the gap between the two realms to showcase a sense of the past, present and future.
+        <div class="profile-text">
 
-<br><br>
+            Trained in Creative Documentary filmmaking, I consider my practice as experimental non-fiction. My work lies at the intersection of social-political realities and the human psyche, attempting to bridge the gap between the two realms to showcase a sense of the past, present and future.
 
-I like to begin my inquiry through the lens of the inner child, and then expand my vision through rigorous research. My engagement accommodates an initial theoretical framework, which also always finds space for abstraction and intangible concepts.
+            <br><br>
 
-<br><br>
+            I like to begin my inquiry through the lens of the inner child, and then expand my vision through rigorous research. My engagement accommodates an initial theoretical framework, which also always finds space for abstraction and intangible concepts.
 
-I have experience in many different capacities of non-fiction production, mostly but not exclusive to research, scriptwriting and editing. I am currently working on two non-fiction projects; a documentary about the Nari Semri Temple in Mathura, a tale of religious claim, kinship and its twisted relationship with divinity, and an experimental short on a relatively lesser-known communal clash in the village of Nuh, Haryana in 2023.
+            <br><br>
 
-</div>
+            I have experience in many different capacities of non-fiction production, mostly but not exclusive to research, scriptwriting and editing. I am currently working on two non-fiction projects; a documentary about the Nari Semri Temple in Mathura, a tale of religious claim, kinship and its twisted relationship with divinity, and an experimental short on a relatively lesser-known communal clash in the village of Nuh, Haryana in 2023.
 
-<div class="section">
+        </div>
 
-<div class="section-title">Education</div>
+        <div class="portrait-container">
 
-<div class="entry">
-<div class="entry-title">Delhi College of Arts and Commerce (Bachelor of Arts: History)</div>
-<div class="entry-date">2015–2018</div>
-<div class="entry-text">
-Part of the Music Society, Dastgah.
-</div>
-</div>
+            <div class="portrait">
+                <img src="images/portrait.jpg" alt="Rustam Mazumdar">
+            </div>
 
-<div class="entry">
-<div class="entry-title">Sri Aurobindo Centre for Arts and Communication (Diploma in Creative Documentary Filmmaking)</div>
-<div class="entry-date">2018–2019</div>
-</div>
+        </div>
 
-<div class="entry">
-<div class="entry-title">Indira Gandhi National Open University (Masters in English Literature)</div>
-<div class="entry-date">2022–2023</div>
-</div>
+    </div>
 
-</div>
+    <div class="section">
+
+        <div class="section-title">
+            Education
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">
+                Delhi College of Arts and Commerce (Bachelor of Arts: History)
+            </div>
+
+            <div class="entry-date">
+                2015–2018
+            </div>
+
+            <div class="entry-text">
+                Part of the Music Society, Dastgah.
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">
+                Sri Aurobindo Centre for Arts and Communication (Diploma in Creative Documentary Filmmaking)
+            </div>
+
+            <div class="entry-date">
+                2018–2019
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">
+                Indira Gandhi National Open University (Masters in English Literature)
+            </div>
+
+            <div class="entry-date">
+                2022–2023
+            </div>
+        </div>
+
+    </div>
 
 </div>
 
