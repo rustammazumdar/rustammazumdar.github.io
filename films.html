@@ -4,37 +4,331 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Films</title>
+<title>Films | Rustam Mazumdar</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     background:#e8e8e8;
     font-family:'Montserrat', sans-serif;
-    padding:100px;
+    color:#111;
 }
 
-h1{
-    font-size:4rem;
+.page{
+    max-width:1100px;
+    margin:0 auto;
+    padding:80px;
+}
+
+/* Home */
+
+.home-link{
+    position:fixed;
+    top:32px;
+    right:36px;
+    width:34px;
+    height:34px;
+    opacity:0.55;
+    transition:opacity 0.3s ease;
+}
+
+.home-link:hover{
+    opacity:1;
+}
+
+.home-link svg{
+    width:100%;
+    height:100%;
+    fill:#111;
+}
+
+/* Heading */
+
+.section-title{
+    font-size:0.8rem;
+    font-weight:500;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    margin-bottom:80px;
+}
+
+/* Films */
+
+.film{
+    margin-bottom:120px;
+}
+
+.film-title{
+    font-size:1.2rem;
+    font-weight:400;
+    margin-bottom:8px;
+}
+
+.film-role{
+    font-size:0.9rem;
+    color:#666;
+    margin-bottom:16px;
+}
+
+.film-text{
+    font-size:0.95rem;
     font-weight:300;
+    line-height:1.8;
+    margin-bottom:30px;
+    max-width:750px;
 }
 
-a{
-    color:black;
+.video-wrapper{
+    width:100%;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    height:560px;
+    border:none;
+}
+
+.project-link{
+    display:inline-block;
+    margin-top:12px;
+    color:#111;
     text-decoration:none;
+    border-bottom:1px solid rgba(0,0,0,0.15);
+}
+
+.project-link:hover{
+    border-bottom-color:#111;
+}
+
+@media(max-width:900px){
+
+    .page{
+        padding:40px 25px;
+    }
+
+    .video-wrapper iframe{
+        height:320px;
+    }
+
 }
 
 </style>
 </head>
+
 <body>
 
-<h1>Writing</h1>
+<a href="index.html" class="home-link" aria-label="Home">
 
-<br><br>
+<svg viewBox="0 0 24 24">
+    <path d="M12 3L3 10V21H9V14H15V21H21V10L12 3Z"/>
+</svg>
 
-<a href="index.html">← Home</a>
+</a>
+
+<div class="page">
+
+<div class="section-title">
+Experience, Awards and Selections
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        Teesri Khwaish
+    </div>
+
+    <div class="film-role">
+        Location Project Student Film
+    </div>
+
+    <div class="film-text">
+        Selected for Dharamshala International Film Festival 2019<br>
+        Best Director at 8th Kolkata Shorts International Film Festival 2019<br>
+        Selected for Signs Film Festival 2019
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        Anima
+    </div>
+
+    <div class="film-role">
+        Direction and Production
+    </div>
+
+    <div class="film-text">
+        Screened as part of the Vuedemic Online Short Film Festival 2021.<br>
+        Screened for the online and physical edition of Tactus, the 2021 Athens Digital Arts Festival.<br>
+        Selected as part of the Labocine catalog and part of the March "Brain is the Screen" issue.
+    </div>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://player.vimeo.com/video/516626274"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        Bahar Kyon Bhatke?
+    </div>
+
+    <div class="film-role">
+        Research, Scripting and Sound
+    </div>
+
+    <div class="film-text">
+        Official Selection in the Competition: Short Documentary section, 14th International Documentary and Shorts Film Festival of India (IDSFFK).<br>
+        Selected at the 11th Chennai International Documentary Film Festival, 2023.<br>
+        Selected at Signs Film Festival 2023.
+    </div>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/0ehDr8qnHyE"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        Saurangi
+    </div>
+
+    <div class="film-role">
+        Associate Director, Research and Scripting
+    </div>
+
+    <div class="film-text">
+        Selected at Signs Film Festival 2023.
+    </div>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/xujBKPzC3T0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        First Son of the Bastard Race
+    </div>
+
+    <div class="film-role">
+        Direction and Animation
+    </div>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://player.vimeo.com/video/652168016"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        The Making of the Paradise of Food
+    </div>
+
+    <div class="film-role">
+        Editor
+    </div>
+
+    <div class="film-text">
+        JCB Prize for Literature Short Film.
+    </div>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/qOn8SwAiweA"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        UNESCO 2023 State of the Education Report
+    </div>
+
+    <div class="film-role">
+        Video Production, Scripting, Sound and Editing
+    </div>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        A Day Out with the Bandsmen
+    </div>
+
+    <div class="film-role">
+        Editor
+    </div>
+
+    <a
+        class="project-link"
+        href="https://norient.com/abhishek-mathur/day-out-bandsmen?special=347"
+        target="_blank">
+        View Project →
+    </a>
+
+</div>
+
+<div class="film">
+
+    <div class="film-title">
+        The Making of I Named My Sister Silence
+    </div>
+
+    <div class="film-role">
+        Editor
+    </div>
+
+    <div class="film-text">
+        JCB Prize for Literature Short Film.
+    </div>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/LrPamfrP1PM"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+</div>
 
 </body>
 </html>
