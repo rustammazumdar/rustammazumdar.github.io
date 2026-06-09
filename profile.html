@@ -4,37 +4,270 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Profile</title>
+<title>Profile | Rustam Mazumdar</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     background:#e8e8e8;
     font-family:'Montserrat', sans-serif;
-    padding:100px;
+    color:#111;
 }
 
-h1{
-    font-size:4rem;
+.page{
+    max-width:1200px;
+    padding:80px;
+}
+
+/* Home */
+
+.home-link{
+    position:fixed;
+    top:32px;
+    right:36px;
+    width:34px;
+    height:34px;
+    opacity:0.45;
+    transition:opacity .3s ease;
+}
+
+.home-link:hover{
+    opacity:1;
+}
+
+.home-link svg{
+    width:100%;
+    height:100%;
+    fill:none;
+    stroke:#111;
+    stroke-width:1.5;
+}
+
+/* Intro */
+
+.profile-text{
+    max-width:560px;
+    font-size:0.95rem;
+    line-height:1.9;
+    font-weight:300;
+    margin-bottom:120px;
+}
+
+/* Sections */
+
+.section{
+    margin-bottom:100px;
+    max-width:850px;
+}
+
+.section-title{
+    font-size:0.8rem;
+    font-weight:500;
+    text-transform:uppercase;
+    letter-spacing:0.15em;
+    margin-bottom:40px;
+}
+
+.entry{
+    margin-bottom:38px;
+}
+
+.entry-title{
+    font-size:1rem;
+    font-weight:400;
+    margin-bottom:4px;
+}
+
+.entry-date{
+    font-size:0.9rem;
+    color:#666;
+    margin-bottom:8px;
+}
+
+.entry-text{
+    font-size:0.92rem;
+    line-height:1.8;
     font-weight:300;
 }
 
-a{
-    color:black;
-    text-decoration:none;
+/* Filmography */
+
+.project{
+    margin-bottom:45px;
+}
+
+.project-title{
+    font-size:1rem;
+    font-weight:400;
+    margin-bottom:4px;
+}
+
+.project-role{
+    color:#666;
+    font-size:0.9rem;
+    margin-bottom:10px;
+}
+
+.project-text{
+    font-size:0.92rem;
+    line-height:1.8;
+    font-weight:300;
+}
+
+@media(max-width:768px){
+
+    .page{
+        padding:40px 30px;
+    }
+
+    .profile-text{
+        max-width:100%;
+    }
 }
 
 </style>
 </head>
+
 <body>
 
-<h1>Writing</h1>
+<a href="index.html" class="home-link" aria-label="Home">
+
+<svg viewBox="0 0 24 24">
+
+    <!-- Left Arrow -->
+    <path d="M10 6 L4 12 L10 18"/>
+    <path d="M4 12 H14"/>
+
+    <!-- House -->
+    <path d="M15 10 L20 6 L25 10"/>
+    <path d="M17 10 V18 H23 V10"/>
+
+</svg>
+
+</a>
+
+<div class="page">
+
+<div class="profile-text">
+
+Trained in Creative Documentary filmmaking, I consider my practice as experimental non-fiction. My work lies at the intersection of social-political realities and the human psyche, attempting to bridge the gap between the two realms to showcase a sense of the past, present and future.
 
 <br><br>
 
-<a href="index.html">← Home</a>
+I like to begin my inquiry through the lens of the inner child, and then expand my vision through rigorous research. My engagement accommodates an initial theoretical framework, which also always finds space for abstraction and intangible concepts.
+
+<br><br>
+
+I have experience in many different capacities of non-fiction production, mostly but not exclusive to research, scriptwriting and editing. I am currently working on two non-fiction projects; a documentary about the Nari Semri Temple in Mathura, a tale of religious claim, kinship and its twisted relationship with divinity, and an experimental short on a relatively lesser-known communal clash in the village of Nuh, Haryana in 2023.
+
+</div>
+
+<div class="section">
+
+<div class="section-title">Education</div>
+
+<div class="entry">
+<div class="entry-title">Delhi College of Arts and Commerce (Bachelor of Arts: History)</div>
+<div class="entry-date">2015–2018</div>
+<div class="entry-text">Part of the Music Society, Dastgah.</div>
+</div>
+
+<div class="entry">
+<div class="entry-title">Sri Aurobindo Centre for Arts and Communication (Diploma in Creative Documentary Filmmaking)</div>
+<div class="entry-date">2018–2019</div>
+</div>
+
+<div class="entry">
+<div class="entry-title">Indira Gandhi National Open University (Masters in English Literature)</div>
+<div class="entry-date">2022–2023</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-title">Experience, Awards and Selections</div>
+
+<div class="project">
+<div class="project-title">Teesri Khwaish</div>
+<div class="project-role">Location Project Student Film</div>
+<div class="project-text">
+Selected for Dharamshala International Film Festival 2019.<br>
+Best Director at 8th Kolkata Shorts International Film Festival 2019.<br>
+Selected for Signs Film Festival 2019.
+</div>
+</div>
+
+<div class="project">
+<div class="project-title">Anima</div>
+<div class="project-role">Direction and Production</div>
+<div class="project-text">
+Screened as part of the Vuedemic Online Short Film Festival 2021.<br>
+Screened at the Athens Digital Arts Festival 2021.<br>
+Selected as part of the Labocine catalogue.
+</div>
+</div>
+
+<div class="project">
+<div class="project-title">Bahar Kyon Bhatke?</div>
+<div class="project-role">Research, Scripting and Sound</div>
+<div class="project-text">
+Official Selection, IDSFFK.<br>
+Selected at Chennai International Documentary Film Festival 2023.<br>
+Selected at Signs Film Festival 2023.
+</div>
+</div>
+
+<div class="project">
+<div class="project-title">Saurangi</div>
+<div class="project-role">Associate Director, Research and Scripting</div>
+<div class="project-text">
+Selected at Signs Film Festival 2023.
+</div>
+</div>
+
+<div class="project">
+<div class="project-title">First Son of the Bastard Race</div>
+<div class="project-role">Direction and Animation</div>
+</div>
+
+<div class="project">
+<div class="project-title">The Making of the Paradise of Food</div>
+<div class="project-role">Editor</div>
+<div class="project-text">
+JCB Prize for Literature Short Film.
+</div>
+</div>
+
+<div class="project">
+<div class="project-title">UNESCO 2023 State of the Education Report</div>
+<div class="project-role">Video Production, Scripting, Sound and Editing</div>
+</div>
+
+<div class="project">
+<div class="project-title">A Day Out with the Bandsmen</div>
+<div class="project-role">Editor</div>
+</div>
+
+<div class="project">
+<div class="project-title">The Making of I Named My Sister Silence</div>
+<div class="project-role">Editor</div>
+<div class="project-text">
+JCB Prize for Literature Short Film.
+</div>
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
